@@ -24,10 +24,14 @@
 body {
   background-color: #0a192f;
   color: #fd8e8e;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
 }
 
 main {
-  margin: 60px 50px;
+  padding: 60px 50px;
 }
 
 a {
@@ -50,6 +54,7 @@ nav {
   z-index: 12;
   padding: 0 20px;
   font-family: "Roboto Mono", monospace;
+  backdrop-filter: blur(10px);
 }
 
 .menu ul {
@@ -69,6 +74,11 @@ li a {
 }
 
 /* FIRST SECTION - INTRO*/
+
+.intro {
+  margin-bottom: 100px;
+}
+
 .intro span {
   font-family: "Roboto Mono", monospace;
   text-transform: lowercase;
@@ -121,12 +131,18 @@ h1 {
 
 .about {
   margin-top: 200px;
+  background-color: #fd8e8e;
+
+  position: sticky;
+  top: 0;
+  margin: 0 -500%;
+  padding: 40px 500%;
 }
 
 .about h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
-  color: #fd8e8eb7;
+  color: #0a192f;
   margin: 5px 0 30px 0;
 }
 
@@ -140,7 +156,7 @@ h1 {
 .about p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  color: #fd8e8eb7;
+  color: #18273d;
 }
 
 #smallerText {
