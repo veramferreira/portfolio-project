@@ -141,9 +141,8 @@ h1 {
   }
   
   .profile-image img {
-    
-    opacity: 0.7;
-    top: 0;
+  opacity: 0.7;
+  top: 0;
   margin: 0px -10%;
   padding: 0px -10%;
   object-fit: cover;
@@ -213,7 +212,7 @@ h1 {
 
 .portfolio {
   margin-top: 200px;
-  background-color: #fd8e8e;
+  background-color:#fde58e;
   position: sticky;
   top: 0;
   margin: 0 -500%;
@@ -223,13 +222,13 @@ h1 {
 .portfolio h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
-  color: #0a192f;
+  color:#18273d;
   margin: 5px 0 30px 0;
 }
 
 .portfolio h4 {
   font-family: "Roboto Mono", monospace;
-  color: #fde58e;
+  color:#fd8e8e;
   text-transform: lowercase;
   margin: 30px 0 0 0;
 }
@@ -246,7 +245,7 @@ h1 {
 
 /* FITH SECTION - CONTACT */
 
-.contact {
+.contact-page {
   margin-top: 200px;
   background-color: #0a192f;
   position: sticky;
@@ -255,17 +254,85 @@ h1 {
   padding: 40px 500%;
 }
 
-.contact h2 {
+.contact-page h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   color: #fd8e8e;
   margin: 5px 0 30px 0;
 }
 
-.contact p {
+.contact-page p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #fd8e8e;
+}
+
+/* CONTACT FORM */
+
+
+#contact { 
+
+  margin: 40px;
+  color: #fde58e;
+  background-color: transparent;
+  font-family: "Roboto Mono", monospace;
+  text-transform: lowercase;
+  border: 1px solid #fde58e;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#contact:hover { 
+  background:#18273d;
+  cursor: pointer;
+}
+
+#contact:active { 
+  background: #18273d; 
+}
+
+#contactForm { 
+  display: none;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  
+  display: block; 
+  width: 280px; 
+  padding: .4em;
+}
+textarea { 
+  height: 80px; resize: none; 
+}
+
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
 }
 
 footer {
